@@ -52,7 +52,7 @@ function decode() {
 }
 
 function idea() {
-  open -na "IntelliJ IDEA.app" --args "$@"
+  open -na "IntelliJ IDEA Ultimate.app" --args "$@"
 }
 
 # K8s
