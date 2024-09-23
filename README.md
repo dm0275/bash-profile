@@ -14,8 +14,8 @@ To include the scripts in your `.bashrc` or `.zshrc`, you can just source all th
 
 ```bash
 # Source script files
-for script_file in $HOME/.bash/*; do
-  source $script_file
+for script_file in $HOME/.bash/*.sh; do
+  source "$script_file"
 done
 ```
 
