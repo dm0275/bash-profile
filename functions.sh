@@ -56,6 +56,14 @@ function idea() {
 }
 
 # K8s
+function createCluster() {
+    k3d cluster create
+}
+
+function deleteCluster() {
+    k3d cluster delete
+}
+
 function refreshCluster() {
-    TODO
+    k3d cluster delete && sleep 5 && k3d cluster create
 }

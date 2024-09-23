@@ -28,7 +28,7 @@ alias g='./gradlew'
 
 # Docker
 alias drun="docker run -it --rm --entrypoint=bash"
-alias removeUntaggedImages='docker rmi $(docker images | grep "^<none>" | awk "{print $3}")'
+alias removeUntaggedImages="docker rmi $(docker images | grep "^<none>" | awk "{print $3}")"
 alias stopAllContainers='docker stop $(docker ps -aq)'
 alias removeAllContainers='docker rm $(docker ps -aq)'
 alias stopDocker="test -z \"$(docker ps -q 2>/dev/null)\" && osascript -e 'quit app \"Docker\"'"
